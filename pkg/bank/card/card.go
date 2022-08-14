@@ -1,8 +1,6 @@
 package card
 
-import (
-	"bank/pkg/bank/types"
-)
+import "bank/pkg/bank/types"
 
 func IssueCard(currency types.Currency, color string, name string) types.Card {
 	card := types.Card{

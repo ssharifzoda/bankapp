@@ -21,7 +21,7 @@ func ExampleWithdraw_inactive() {
 	//Output: 0
 }
 func ExampleWithdraw_limit() {
-	result := Withdraw(types.Card{Balance: 200_000_00}, 20_000_01)
+	result := Withdraw(types.Card{Balance: 200000_00}, 20_000_01)
 	fmt.Println(result.Balance)
 	//Output: 20000000
 }

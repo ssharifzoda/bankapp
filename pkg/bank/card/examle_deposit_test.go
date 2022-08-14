@@ -7,9 +7,9 @@ import (
 
 func ExampleDeposit_positive() {
 	card := &types.Card{Balance: -10, Active: true}
-	Deposit(card, 100)
+	Deposit(card, 1000)
 	fmt.Println(card.Balance)
-	//Output:90
+	//Output:990
 }
 func ExampleDeposit_inactive() {
 	card := &types.Card{Balance: 10, Active: false}

@@ -24,7 +24,7 @@ func ExampleAddBonus_noBalance() {
 	//Output: -10
 }
 func ExampleAddBonus_unlimit() {
-	card := &types.Card{Balance: 10, Active: true, MinBalance: 150000000}
+	card := &types.Card{Balance: 10, Active: true, MinBalance: 150_000000}
 	AddBonus(card, 3, 30, 365)
 	fmt.Println(card.Balance)
 	//Output: 5010
