@@ -1,6 +1,6 @@
 package types
 
-type Money int
+type Money int64
 
 type Currency string
 
