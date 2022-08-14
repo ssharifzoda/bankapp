@@ -40,3 +40,14 @@ func Total(cards []types.Card) types.Money {
 	}
 	return types.Money(sum)
 }
+func PaymentSources(cards []types.Card) []types.PaymentSource {
+	var paymentSource []types.PaymentSource
+	for i, card := range cards {
+		if card.Balance > 0 && card.Active != false {
+			paymentSource[i].Balance = card.Balance
+			paymentSource[i].Type = "card"
+			paymentSource[i].Number = string(card.PAN)
+		}
+	}
+	return paymentSource
+}

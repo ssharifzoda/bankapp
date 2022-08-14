@@ -1,0 +1,5 @@
+package card
+
+func ExamplePaymentSources() {
+
+}
