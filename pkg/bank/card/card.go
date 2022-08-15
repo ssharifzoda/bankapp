@@ -52,6 +52,7 @@ func PaymentSources(cards []types.Card) []types.PaymentSource {
 			paymentSource[i].Number = string(card.PAN)
 		}
 		fmt.Println(paymentSource[i].Number)
+		return paymentSource
 	}
 	return paymentSource
 }
