@@ -1,3 +1,3 @@
-module bank
+module github.com/ssharifzoda/bank
 
-go 1.19
+go 1.18
