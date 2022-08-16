@@ -1,8 +1,8 @@
 package card
 
 import (
-	"bank/pkg/bank/types"
 	"fmt"
+	"github.com/ssharifzoda/bank/pkg/bank/types"
 )
 
 func ExampleAddBonus_positive() {
